@@ -66,11 +66,11 @@ public class ServerVoiceEvents {
     }
 
     public boolean isCompatible(ServerPlayer player) {
-        return isCompatible(player.getUUID());
+        return true;
     }
 
     public boolean isCompatible(UUID playerUuid) {
-        return clientCompatibilities.getOrDefault(playerUuid, -1) == Voicechat.COMPATIBILITY_VERSION;
+        return true;
     }
 
     public void serverStarting(MinecraftServer mcServer) {
